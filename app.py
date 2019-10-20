@@ -245,7 +245,7 @@ gantt_chart_analysis = gantt_chart_analysis.sort_values(by='Start')
 gca1 = gantt_chart_analysis.loc[gantt_chart_analysis['Complete'] == 'Feb19']
 gca1.reset_index(inplace=True, drop=True)
 
-fig_gca = ff.create_gantt(gantt_chart_analysis, height = 900)
+fig_gca = ff.create_gantt(gantt_chart_analysis, height = 1200)
 
 url_bar_and_content_div = html.Div([
     dcc.Location(id='url', refresh=False),
